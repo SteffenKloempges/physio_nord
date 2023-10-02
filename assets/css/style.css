@@ -1,0 +1,208 @@
+/* ==========================
+        General
+===========================*/
+@font-face {
+    font-family: "Raleway-Light";
+    src: url("../fonts/Raleway/static/Raleway-Light.ttf");
+}
+
+@font-face {
+    font-family: "Raleway-Regular";
+    src: url("../fonts/Raleway/static/Raleway-Regular.ttf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Raleway-Light";
+}
+
+body {
+    max-width: 1920px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration-color: #8FBF22;
+}
+
+.section_headline {
+    font-family: "Raleway-Regular";
+    font-size: 52px;
+    text-align: center;
+}
+
+/* ==========================
+        Header
+===========================*/
+header {
+    height: 100vh;
+    background-blend-mode: multiply;
+    background: url("https://images.unsplash.com/photo-1620051844584-15ac31d5fccd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=4800&q=80") center / cover no-repeat;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2%;
+    background-color: rgba(217, 217, 217, 0.2);
+    border-radius: 0 0 15px 15px;
+}
+
+header nav img {
+    width: 8%;
+}
+
+header nav div {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav div a {
+    color: #fff;
+    font-size: 24px;
+}
+
+/* ==========================
+        Main-Team
+===========================*/
+main .changing_quote p {
+    background-color: #fff;
+    color: #000;
+    padding: 15vh 0;
+    font-size: 24px;
+    text-align: center;
+    font-style: italic;
+}
+
+main #team {
+    background-color: #C2C2C2;
+    padding: 2vh 0;
+}
+
+main #team .team_card {
+    margin: 10vh 0;
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+}
+
+main #team .even_card {
+    text-align: right;
+}
+
+main #team .team_card img {
+    object-fit: contain;
+    width: 20%;
+    border-radius: 10px;
+}
+
+main #team .team_card div {
+    padding-top: 2vh;
+    width: 30%;
+}
+
+main #team .team_card div h2 {
+    font-size: 40px;
+    padding-bottom: 2vh;
+}
+
+main #team .team_card div p {
+    text-align: justify;
+    font-size: 20px;
+}
+
+main #team .team_about_description {
+    margin: 5vh auto;
+    text-align: center;
+    width: 55%;
+    font-size: 20px;
+}
+
+/* ==========================
+        Main-Leistungen
+===========================*/
+main #leistungen {
+    padding: 5vh 3%;
+    background-color: #fff;
+    color: #000;
+}
+
+main #leistungen>section {
+    margin: 15vh 0;
+    display: flex;
+}
+
+main #leistungen>section article {
+    width: 50%;
+    font-size: 24px;
+}
+
+main #leistungen article:nth-of-type(1) ul {
+    list-style: none;
+    line-height: 1.5;
+}
+
+main #leistungen article:nth-of-type(2) p {
+    text-align: justify;
+}
+
+/* ==========================
+        Main-FAQ
+===========================*/
+
+main #faq {
+    background-color: #C2C2C2;
+    text-align: center;
+}
+
+/* ==========================
+        Footer
+===========================*/
+footer {
+    background-color: #C2C2C2;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer a {
+    color: #000;
+}
+
+footer #contact {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    margin: 10vh 10%;
+}
+
+footer #contact div {
+    background-color: #fff;
+    width: 300px;
+    height: 200px;
+    padding: 30px 30px 10px;
+    color: #000;
+    border-radius: 10px;
+}
+
+footer #contact div img {
+    width: 10%;
+}
+
+footer #contact div h3 {
+    margin: 10px;
+}
