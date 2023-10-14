@@ -18,6 +18,10 @@
     font-family: "Raleway-Light";
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     max-width: 1920px;
     margin: 0 auto;
@@ -43,22 +47,35 @@ a:hover {
         Header
 ===========================*/
 header {
-    height: 100vh;
+    height: 90vh;
     background-blend-mode: multiply;
     background: url("https://images.unsplash.com/photo-1620051844584-15ac31d5fccd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=4800&q=80") center / cover no-repeat;
     background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header h2 {
+    font-size: 20px;
+}
+
+header h1 {
+    font-size: 60px;
 }
 
 header nav {
     position: fixed;
     top: 0;
-    left: 0;
-    right: 0;
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 2%;
-    background-color: rgba(217, 217, 217, 0.2);
+    background-color: rgba(217, 217, 217, 0.5);
     border-radius: 0 0 15px 15px;
 }
 
@@ -157,6 +174,10 @@ main #leistungen article:nth-of-type(1) ul {
     line-height: 1.5;
 }
 
+main #leistungen article:nth-of-type(1) ul li:hover {
+    cursor: pointer;
+}
+
 main #leistungen article:nth-of-type(2) p {
     text-align: justify;
 }
@@ -166,8 +187,58 @@ main #leistungen article:nth-of-type(2) p {
 ===========================*/
 
 main #faq {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #C2C2C2;
-    text-align: center;
+    color: #fff;
+}
+
+main #faq article {
+    width: 49%;
+}
+
+main #faq article:nth-of-type(2) .accordion {
+    color: #fff;
+    background-color: #C2C2C2;
+    position: relative;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 24px;
+    transition: 0.4s;
+}
+
+main #faq article:nth-of-type(2) .accordion:after {
+    position: absolute;
+    content: '\002B';
+    font-weight: bold;
+    top: 18px;
+    right: 20px;
+}
+
+main #faq article:nth-of-type(2) .active:after {
+    content: "\2212";
+}
+
+main #faq article:nth-of-type(2) .border {
+    border-top: 1px solid #fff;
+}
+
+main #faq article:nth-of-type(2) .panel {
+    font-size: 20px;
+    padding: 0 18px;
+    margin-bottom: 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+main #faq article:nth-of-type(2) .panel p {
+    color: #fff;
 }
 
 /* ==========================
