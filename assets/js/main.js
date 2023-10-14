@@ -68,3 +68,18 @@ for (i = 0; i < acc.length; i++) {
         }
     });
 }
+
+let accLeistungen = document.getElementsByClassName("accordion_leistungen_mobile");
+let iLeistungen;
+
+for (iLeistungen = 0; iLeistungen < accLeistungen.length; iLeistungen++) {
+    accLeistungen[iLeistungen].addEventListener("click", function () {
+        this.classList.toggle("active");
+        let panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+        } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+    });
+}

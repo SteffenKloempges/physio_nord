@@ -1,0 +1,208 @@
+/* =================================
+            MEDIA 992
+===================================*/
+
+@media screen and (max-width:992px) {
+    .section_headline {
+        font-size: 40px;
+    }
+
+    header nav img {
+        width: 15%;
+    }
+
+    header nav div {
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    main #team .team_about_description {
+        margin: 10vh auto;
+        width: 80%;
+    }
+
+    main #team .team_card {
+        gap: 8%;
+    }
+
+    main #team .team_card img {
+        width: 30%;
+    }
+
+    main #leistungen article:nth-of-type(2) p {
+        font-size: 18px;
+    }
+}
+
+/* =================================
+            MEDIA 768
+===================================*/
+
+@media screen and (max-width:768px) {
+    header {
+        height: 70vh;
+    }
+
+    main #team .team_card {
+        flex-direction: column;
+        margin: 10vh 10%;
+    }
+
+    main #team .even_card {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: left;
+    }
+
+    main #team .team_card img {
+        width: 40%;
+    }
+
+    main #team .team_card div {
+        padding-top: 2vh;
+        width: 100%;
+    }
+
+    main #faq {
+        flex-direction: column;
+    }
+
+    main #faq article {
+        margin: 5vh 0;
+        width: 90%;
+    }
+
+    footer #contact {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer #contact div {
+        margin: 5vh 0;
+    }
+}
+
+/* =================================
+            MEDIA 576
+===================================*/
+
+@media screen and (max-width:576px) {
+    header {
+        height: 100vh;
+    }
+
+    header nav img {
+        width: 40%;
+    }
+
+    header nav div {
+        width: 20%;
+    }
+
+    header nav a {
+        display: none;
+    }
+
+    header nav .mobile_menu {
+        display: block;
+    }
+
+    header nav .mobile_menu span {
+        display: block;
+        width: 50px;
+        height: 5px;
+        background: #000;
+        margin: 5px 0;
+        border-radius: 5px;
+    }
+
+    main .changing_quote p {
+        display: none;
+    }
+
+    main #team .team_about_description {
+        margin: 5vh auto 10vh auto;
+        width: 90%;
+    }
+
+    main #team .team_card img {
+        width: 100%;
+    }
+
+    main #leistungen {
+        display: none;
+    }
+
+    main #leistungen_mobile {
+        display: block;
+        width: 95%;
+        margin: 0 auto;
+        padding: 5vh 0;
+    }
+
+    main #leistungen_mobile h2 {
+        color: #000;
+        margin-bottom: 5vh;
+    }
+
+    main .accordion_leistungen_mobile {
+        color: #000;
+        background-color: #fff;
+        position: relative;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 18px;
+        transition: 0.4s;
+    }
+
+    main .accordion_leistungen_mobile:not(:first-of-type) {
+        border-top: 1px solid #000;
+    }
+
+    main .accordion_leistungen_mobile:after {
+        position: absolute;
+        content: '\002B';
+        font-weight: bold;
+        top: 18px;
+        right: 30px;
+    }
+
+    main .active:after {
+        content: "\2212";
+    }
+
+    main .accordion_leistungen_mobile .border {
+        border-top: 10px solid #000;
+    }
+
+    main .panel_leistungen_mobile {
+        font-size: 20px;
+        padding: 0 18px;
+        margin-bottom: 10px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+    }
+
+    main .panel_leistungen_mobile p {
+        color: #000;
+    }
+
+    main #faq article {
+        margin-top: 5vh;
+        width: 95%;
+    }
+
+    main #faq article:nth-of-type(2) .accordion {
+        font-size: 18px;
+    }
+
+    footer #contact {
+        margin: 5vh 10%;
+    }
+}

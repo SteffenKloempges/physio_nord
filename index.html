@@ -7,6 +7,7 @@
     <title>Physio Nord Werl</title>
     <link rel="shortcut icon" href="./assets/img/logo_icon.jpg" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/media992.css">
 </head>
 
 <body>
@@ -17,6 +18,11 @@
                 <a href="#team">Team</a>
                 <a href="#leistungen">Leistung</a>
                 <a href="#contact">Kontakt</a>
+                <div class="mobile_menu" onclick="showMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </nav>
         <h2>Herzlich Willkommen bei</h2>
@@ -28,6 +34,15 @@
         </section>
         <section id="team">
             <h2 class="section_headline">Das sind wir</h2>
+            <p class="team_about_description">Wir - Physio Nord by Paul - hören Ihnen zu und nehmen Sie wahr.
+                Wir sehen uns als Partner und Begleiter auf Ihrem Weg der Rehabilitation und unterstützen Sie bei der
+                Sicherung Ihrer Lebensqualität. Wir berücksichtigen dabei Ihre individuellen Bedürfnisse und erarbeiten
+                gemeinsam einen Therapieplan.
+                Wir helfen Ihre Schmerzen zu lindern, Sie beweglicher zu machen und geschwächte Muskulatur zu kräftigen.
+                Außerdem ist es ein weiteres wichtiges Ziel, gemeinsam Ihre Ressourcen zu entdecken, damit Sie auch in
+                Eigeninitiative langfristig Ihre Gesundheit unterstützen können.
+                Natürlich sind wir nicht nur für den Norden da! Alle Menschen aus jeder Himmelsrichtung sind herzlich
+                willkommen.</p>
             <article class="team_card">
                 <img src="https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3300&q=80"
                     alt="">
@@ -50,16 +65,6 @@
                 <img src="https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3300&q=80"
                     alt="">
             </article>
-            <h2 class="section_headline">Leitbild</h2>
-            <p class="team_about_description">Wir - Physio Nord by Paul - hören Ihnen zu und nehmen Sie wahr.
-                Wir sehen uns als Partner und Begleiter auf Ihrem Weg der Rehabilitation und unterstützen Sie bei der
-                Sicherung Ihrer Lebensqualität. Wir berücksichtigen dabei Ihre individuellen Bedürfnisse und erarbeiten
-                gemeinsam einen Therapieplan.
-                Wir helfen Ihre Schmerzen zu lindern, Sie beweglicher zu machen und geschwächte Muskulatur zu kräftigen.
-                Außerdem ist es ein weiteres wichtiges Ziel, gemeinsam Ihre Ressourcen zu entdecken, damit Sie auch in
-                Eigeninitiative langfristig Ihre Gesundheit unterstützen können.
-                Natürlich sind wir nicht nur für den Norden da! Alle Menschen aus jeder Himmelsrichtung sind herzlich
-                willkommen.</p>
         </section>
         <section id="leistungen">
             <h2 class="section_headline">Leistungen & <br> Therapie</h2>
@@ -78,6 +83,91 @@
                     <p id="listTextTherapien"></p>
                 </article>
             </section>
+        </section>
+        <section id="leistungen_mobile">
+            <h2 class="section_headline">Leistungen & <br> Therapie</h2>
+            <button class="accordion_leistungen_mobile">Krankengymnastik</button>
+            <div class="panel_leistungen_mobile">
+                <p>
+                    Physiotherapie umfasst die physiotherapeutischen Verfahren der Bewegungstherapie sowie die
+                    physikalische Therapie.
+                    Physiotherapie nutzt als natürliches Heilverfahren die passive - z.B. durch den Therapeuten geführte
+                    - und die aktive, selbstständig ausgeführte Bewegung des Menschen sowie den Einsatz physikalischer
+                    Maßnahmen zur Heilung und Prävention von Erkrankungen.
+
+                    Damit ist die Physiotherapie eine Alternative oder sinnvolle Ergänzung zur medikamentösen oder
+                    operativen Therapie.
+
+                    *Der Begriff „Krankengymnastik“ wird den modernen Anforderungen physiotherapeutischer Verfahren
+                    inzwischen nicht mehr gerecht, weil nicht nur „Kranke“ die Leistungen in Anspruch nehmen und
+                    „Gymnastik“ als Leibes- und Körperübung die verwendete Methodenvielfalt sehr einschränken würde.</p>
+            </div>
+            <button class="accordion_leistungen_mobile">Manuelle Therapie</button>
+            <div class="panel_leistungen_mobile">
+                <p>
+                    Die Manuelle Therapie ist ein Behandlungsansatz, bei dem Funktionsstörungen des Bewegungsapparates
+                    untersucht und behandelt werden. Grundlage der Manuellen Therapie sind spezielle Handgriff- und
+                    Mobilisationstechniken, bei denen Schmerzen gelindert und Bewegungsstörungen beseitigt werden.
+                    Physiotherapeuten untersuchen dabei die Gelenkmechanik, die Muskelfunktion sowie die Koordination
+                    der Bewegungen, bevor ein individueller Behandlungsplan festgelegt wird. 
+                    Die Manuelle Therapie bedient sich sowohl passiver Techniken als auch aktiver Übungen. Zum einen
+                    werden blockierte oder eingeschränkte Gelenke von geschulten Physiotherapeuten mithilfe sanfter
+                    Techniken mobilisiert, zum anderen können durch individuelle Übungen instabile Gelenke stabilisiert
+                    werden.
+                    Ziel des Behandlungskonzeptes: Wiederherstellung des Zusammenspieles zwischen Gelenken, Muskeln und
+                    Nerven.</p>
+            </div>
+            <button class="accordion_leistungen_mobile">Manuelle Lymphdrainage</button>
+            <div class="panel_leistungen_mobile">
+                <p>
+                    Ziel der Behandlung ist es, die reduzierte Pumpfunktion des Gefäßsystems zu unterstützen. In erster
+                    Linie dient die manuelle Lymphdrainage der Entstauung von geschwollenem Gewebe. Hierbei handelt es
+                    sich zumeist um Schwellungen an Armen oder Beinen. Wir verwenden dabei spezielle Handgriffe, bei
+                    denen durch rhythmische, kreisende und pumpende Bewegungen der Handflächen die angestaute
+                    Flüssigkeit in Richtung der zuständigen Lymphknotenstation abtransportiert wird.
+
+                    Durch die Atmung und durch zusätzliche Anregung entfernt liegender Lymphknoten kann dabei eine
+                    Sogwirkung erzielt werden, die den Abtransport der Gewebsflüssigkeit begünstigt. Das Gewebe schwillt
+                    ab, die Schmerzen werden gelindert und das Gewebe wird lockerer und weicher, was sich ebenfalls auf
+                    die Beweglichkeit auswirkt.</p>
+            </div>
+            <button class="accordion_leistungen_mobile">Massage</button>
+            <div class="panel_leistungen_mobile">
+                <p>
+                    Massagen können sowohl als alleinige Behandlungsform für sich stehen, sie werden aber häufig auch
+                    unterstützend zu anderen Therapieformen eingesetzt. Massagen können vom Arzt verschrieben werden.
+                    Die klassische Massage dient dazu, verspannte Muskelpartien zu lockern, die Durchblutung und den
+                    Stoffwechsel zu fördern, den Kreislauf, den Blutdruck, die Atmung und die Psyche positiv zu
+                    beeinflussen, sowie Schmerzen zu reduzieren.
+                    Unterschiedliche Grifftechniken werden dabei von Therapeuten je nach gewünschter Wirkung angewendet.
+                    Neben der klassischen Massage haben sich heutzutage die unterschiedlichsten Massageformen
+                    entwickelt: wie beispielsweise Bindegewebsmassage, Aromamassage, oder Reflexzonenmassage.</p>
+            </div>
+            <button class="accordion_leistungen_mobile">Wärmetherapie</button>
+            <div class="panel_leistungen_mobile">
+                <p>
+                    In der Physiotherapie werden verschiedene Therapieverfahren eingesetzt, die Wärme oder Kälte nutzen,
+                    um eine schmerzlindernde Wirkung beim Patienten zu erzielen. Sowohl Wärme- als auch Kälteanwendungen
+                    können lokal oder am ganzen Körper eingesetzt werden.
+
+                    Die Wärmetherapie wird häufig als unterstützende Maßnahme eingesetzt, weil sie die Durchblutung
+                    fördert und entspannend auf die Muskulatur und das Gewebe einwirkt. Verfahren der Wärmetherapie sind
+                    zum Beispiel Wärmepackungen, die aus Moor oder Fango bestehen. Wirkung: durchblutungsfördernd,
+                    muskelentspannend und schmerzlindernd. Außerdem kommen spezielle Strahler (Heißluft) zum Einsatz,
+                    die schmerzende Körperpartien erwärmen. Wirkung: ebenso durchblutungsfördernd, schmerzlindernd.</p>
+            </div>
+            <button class="accordion_leistungen_mobile">Kältetherapie</button>
+            <div class="panel_leistungen_mobile">
+                <p>
+                    In der Physiotherapie werden verschiedene Therapieverfahren eingesetzt, die Wärme oder Kälte nutzen,
+                    um eine schmerzlindernde Wirkung beim Patienten zu erzielen. Sowohl Wärme- als auch Kälteanwendungen
+                    können lokal oder am ganzen Körper eingesetzt werden.
+
+                    Auch die Kältetherapie wird häufig als unterstützende Maßnahme eingesetzt. Es gibt unterschiedliche
+                    Formen: wie zum Beispiel Kühlpacks, Kompressen, Eisbad oder Eisabreibung. Die Wirkung der
+                    Kältetherapie ist je nach Temperatur unterschiedlich. Sie wirkt schmerzlindernd, entzündungshemmend
+                    und verbessert die Durchblutung.</p>
+            </div>
         </section>
         <section id="faq">
             <article>
