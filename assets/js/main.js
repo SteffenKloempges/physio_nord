@@ -69,6 +69,10 @@ for (i = 0; i < acc.length; i++) {
     });
 }
 
+// =====================================
+//  leistungen accordion mobile
+//======================================
+
 let accLeistungen = document.getElementsByClassName("accordion_leistungen_mobile");
 let iLeistungen;
 
@@ -82,4 +86,22 @@ for (iLeistungen = 0; iLeistungen < accLeistungen.length; iLeistungen++) {
             panel.style.maxHeight = panel.scrollHeight + "px";
         }
     });
+}
+
+// =====================================
+//  mobile menu
+//======================================
+
+const showMenu = () => {
+    const navMobile = document.body.querySelector('.nav_mobile');
+    navMobile.style.right = 0;
+    navMobile.style.left = 0;
+    console.log("click")
+}
+
+const closeMenu = (check) => {
+    console.log(check)
+    const navMobile = document.body.querySelector('.nav_mobile');
+    navMobile.style.right = -100 + "%";
+    navMobile.style.left = 100 + "%";
 }

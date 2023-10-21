@@ -12,7 +12,7 @@
 
 <body>
     <header>
-        <nav>
+        <nav class="nav_desktop">
             <img src="./assets/img/logo_physio_nord.svg" alt="logo der praxis physio nord">
             <div>
                 <a href="#team">Team</a>
@@ -24,6 +24,11 @@
                     <span></span>
                 </div>
             </div>
+        </nav>
+        <nav class="nav_mobile">
+            <a href="#team" onclick="closeMenu()">Team</a>
+            <a href="#leistungen_mobile" onclick="closeMenu()">Leistungen</a>
+            <a href="#contact" onclick="closeMenu()">Kontakt</a>
         </nav>
         <h2>Herzlich Willkommen bei</h2>
         <h1>Physio Nord</h1>
@@ -44,8 +49,7 @@
                 Natürlich sind wir nicht nur für den Norden da! Alle Menschen aus jeder Himmelsrichtung sind herzlich
                 willkommen.</p>
             <article class="team_card">
-                <img src="https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3300&q=80"
-                    alt="">
+                <img src="./assets/img/team/paul_muenzer.jpeg" alt="Auf dem Bild ist Paul Münzer zusehen">
                 <div>
                     <h2>Paul Münzer</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum ducimus temporibus suscipit
@@ -53,17 +57,6 @@
                         atque minima quod, iusto asperiores odio, ut magnam labore sunt pariatur corrupti expedita.
                         Minus non excepturi modi a voluptates nobis, eligendi quo fugiat nesciunt enim sit.</p>
                 </div>
-            </article>
-            <article class="team_card even_card">
-                <div>
-                    <h2>Paul Münzer</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum ducimus temporibus suscipit
-                        quaerat. Iste magni maiores molestiae dignissimos nesciunt aliquid doloremque. Quidem numquam at
-                        atque minima quod, iusto asperiores odio, ut magnam labore sunt pariatur corrupti expedita.
-                        Minus non excepturi modi a voluptates nobis, eligendi quo fugiat nesciunt enim sit.</p>
-                </div>
-                <img src="https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3300&q=80"
-                    alt="">
             </article>
         </section>
         <section id="leistungen">
@@ -222,6 +215,11 @@
                         des „Sektoralen Heilpraktikers“, ist es möglich auch ohne ärztliche Verordnung
                         Physiotherapeutische Leistungen in Anspruch zu nehmen. Geregelt ist das nach §1 Absatz 1 HeilprG
                         und bei uns voraussichtlich ab März 2024 möglich.</p>
+                </div>
+                <button class="accordion border">Preislist für Selbst-, Privat- und Beihilfezahler</button>
+                <div class="panel">
+                    <p>Hier können Sie unsere Preisliste <a href="./assets/media/Preisliste-Physio-Nord.pdf"
+                            download>runterladen .</a></p>
                 </div>
             </article>
         </section>
