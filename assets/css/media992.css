@@ -23,11 +23,17 @@
     }
 
     main #team .team_card {
+        margin: 5vh 5%;
         gap: 8%;
+        flex-direction: column;
     }
 
     main #team .team_card img {
-        width: 30%;
+        width: 40%;
+    }
+
+    main #team .team_card div {
+        width: 100%;
     }
 
     main #leistungen article:nth-of-type(2) p {
@@ -56,7 +62,8 @@
     }
 
     main #team .team_card img {
-        width: 40%;
+        width: 70%;
+        border-radius: 10px;
     }
 
     main #team .team_card div {
@@ -128,6 +135,7 @@
 
     main #team .team_card img {
         width: 100%;
+        border-radius: 10px;
     }
 
     main #leistungen {
